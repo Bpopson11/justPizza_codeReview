@@ -14,6 +14,7 @@
         <h1>Just Pizza <small>Seriously, it's all we do.</small></h1>
       </div>
       <div class="container">
+        <form id="pizzaForm">
         <div class="row">
           <div class="col-md-9">
             <select id ="crust" class="form-control">
@@ -22,9 +23,9 @@
               <option value="StudyGroup">The "Study Group" --- A large 12" pizza, great for meals during group projects</option>
               <option value="DrunkParty">"The Drunk Party" --- Exactly what it sound like: a massive 16" pizza to satisfy the munchiest of crowds</option>
             </select>
-        </div>
+          </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-4">
             <h3>Standard Toppings</h3>
             <h5>Up to 3 free, with $1 for any additional</h5>
             <!-- START OF CHECKBOX -->
@@ -64,10 +65,46 @@
                 <p>Bell Peppers</p>
               </label>
             </div>
-            <!-- CHECKBOXES -->
+          </div>
+            <!-- Standard CHECKBOXES end here-->
+            <div class="col-sm-6">
+              <h3>Fancy Toppings</h3>
+              <h5>$2 per topping but they're totally worth it</h5>
+              <!-- START OF CHECKBOX -->
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="special">
+                  <p>Grilled Chicken</p>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="special">
+                  <p>Blue Cheese</p>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="special">
+                  <p>Bacon</p>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="special">
+                  <p>Spinach</p>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="special">
+                  <p>Fennel Sausage</p>
+                </label>
+              </div>
           </div>
         </div>
       </div>
-      </div>
+    </form>
+    </div>
   </body>
 </html>
