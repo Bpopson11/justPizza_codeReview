@@ -18,8 +18,9 @@ PizzaMaker.prototype.crustSize = function(size) {
 
 PizzaMaker.prototype.basics = function(tops) {
   var basePrice = this.crustSize("drunkParty");
-  console.log(basePrice);
-  if (tops.length <= 3) {
-  return (basePrice);
-  }
+    if (tops.length <= 3) {
+    return (basePrice);
+    } else if (tops.length >3) {
+    return (basePrice + (tops.length - 3))
+    }
 }
