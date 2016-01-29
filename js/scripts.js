@@ -33,3 +33,11 @@ PizzaMaker.prototype.specials = function(specTops) {
     return (basePrice + (specTops.length * 2))
     }
 }
+
+PizzaMaker.prototype.delivery = function(deliver) {
+  if (deliver === "delivery") {
+   return (3.5)
+  } else if (deliver === "pick up") {
+   return (0)
+  }
+}

@@ -19,5 +19,9 @@ describe('PizzaMaker', function(){
     expect(testPizza.specials(["blue cheese", "fennel sausage", "spinach", "grilled chicken"])).to.equal(17); //tested on blank array too
   });
 
+  it("will charge a delivery fee",  function(){
+    var testPizza = new PizzaMaker();
+    expect(testPizza.delivery("delivery")).to.equal(3.5);
+  });
 
 });
