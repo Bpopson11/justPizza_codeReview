@@ -20,8 +20,8 @@
             <select id ="crust" class="form-control">
               <option value="notToShare">The "Not to Share" --- A personal 8" pizza to have all your own</option>
               <option value="toShare">The "To Share" --- Your traditional medium sized pizza.</option>
-              <option value="StudyGroup">The "Study Group" --- A large 12" pizza, great for meals during group projects</option>
-              <option value="DrunkParty">"The Drunk Party" --- Exactly what it sound like: a massive 16" pizza to satisfy the munchiest of crowds</option>
+              <option value="studyGroup">The "Study Group" --- A large 12" pizza, great for meals during group projects</option>
+              <option value="drunkParty">"The Drunk Party" --- Exactly what it sound like: a massive 16" pizza to satisfy the munchiest of crowds</option>
             </select>
           </div>
         <div class="row">
@@ -31,77 +31,96 @@
             <!-- START OF CHECKBOX -->
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="basic">
+                <input id="basic" type="checkbox" value=1>
                 <p>Pepperoni</p>
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="basic">
+                <input id="basic" type="checkbox" value=1>
                 <p>Italian Sausage</p>
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="basic">
+                <input id="basic" type="checkbox" value=1>
                 <p>Canadian Bacon</p>
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="basic">
+                <input id="basic" type="checkbox" value=1>
                 <p>Red Onions</p>
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="basic">
+                <input id="basic" type="checkbox" value=1>
                 <p>Black Olives</p>
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="basic">
+                <input id="basic" type="checkbox" value=1>
                 <p>Bell Peppers</p>
               </label>
             </div>
           </div>
             <!-- Standard CHECKBOXES end here-->
-            <div class="col-sm-6">
-              <h3>Fancy Toppings</h3>
-              <h5>$2 per topping but they're totally worth it</h5>
-              <!-- START OF CHECKBOX -->
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="special">
-                  <p>Grilled Chicken</p>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="special">
-                  <p>Blue Cheese</p>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="special">
-                  <p>Bacon</p>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="special">
-                  <p>Spinach</p>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="special">
-                  <p>Fennel Sausage</p>
-                </label>
-              </div>
+          <div class="col-sm-4">
+            <h3>Fancy Toppings</h3>
+            <h5>$2 per topping but they're totally worth it</h5>
+            <!-- START OF CHECKBOX -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="special">
+                <p>Grilled Chicken</p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="special">
+                <p>Blue Cheese</p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="special">
+                <p>Bacon</p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="special">
+                <p>Spinach</p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="special">
+                <p>Fennel Sausage</p>
+              </label>
+            </div>
           </div>
+          <div class="col-sm-4">
+            <h3>Delivery or Pickup?</h3>
+            <div class="radio">
+              <label>
+              <input type="radio" name="deliery" id="delivery" value="deliver">
+              <p> I did the hard word. Bring my pizza to me!</p>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="deliery" id="delivery" value="deliver">
+              <p>I haven't left the house all day. I'll come to you!</p>
+              </label>
+            </div>
+          </div>
+        </div><!-- end of first row -->
+        <div class="row">
+        <button type="submit" class="btn btn-default btn-block">Make my Pizza!!!</button>
+
         </div>
       </div>
     </form>

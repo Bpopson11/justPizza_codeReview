@@ -46,6 +46,7 @@ $(document).ready(function() {
   var pizzaMaker = new PizzaMaker();
   $("#pizzaForm").click(function(event) {
   var size = $("select#crust").val();
-  console.log(size);
+  var basePrice = pizzaMaker.crustSize(size);
+  }
   });
 });
