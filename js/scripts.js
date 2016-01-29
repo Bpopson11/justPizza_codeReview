@@ -36,7 +36,7 @@ PizzaMaker.prototype.specials = function(specTops) {
 
 PizzaMaker.prototype.delivery = function(deliver) {
   if (deliver === "delivery") {
-   return (3.5)
+   return (3)
  } else if (deliver === "pickUp") {
    return (0)
   }
@@ -45,6 +45,7 @@ PizzaMaker.prototype.delivery = function(deliver) {
 $(document).ready(function() {
   var pizzaMaker = new PizzaMaker();
   $("#pizzaForm").submit(function(event) {
+    $("#finalPizzaPrice").empty();
     var size = $("select#crust").val();
     var basePrice = pizzaMaker.crustSize(size);
     var basicTops = $('input#basic[type="checkbox"]:checked').length;
@@ -54,7 +55,7 @@ $(document).ready(function() {
     var deliver = $("input#delivery").val();
     var travelFee = pizzaMaker.delivery(deliver);
     var finalPrice = basePrice + basicTopPrice + specTopPrice + travelFee;
-
+    $("#finalPizzaPrice").append("<p>Total: $" + finalPrice + ".00" + "</p>");
 
   event.preventDefault();
   });
