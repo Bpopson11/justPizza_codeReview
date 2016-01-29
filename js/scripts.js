@@ -51,9 +51,10 @@ $(document).ready(function() {
     var specTops = $('input#special[type="checkbox"]:checked').length;
     var basicTopPrice = pizzaMaker.basics(basicTops);
     var specTopPrice = pizzaMaker.specials(specTops);
-    var deliver = $("radio#crust").val();
+    var deliver = $("input#delivery").val();
     var travelFee = pizzaMaker.delivery(deliver);
-    console.log(deliver);
+    var finalPrice = basePrice + basicTopPrice + specTopPrice + travelFee;
+
 
   event.preventDefault();
   });
