@@ -24,3 +24,12 @@ PizzaMaker.prototype.basics = function(tops) {
     return (basePrice + (tops.length - 3))
     }
 }
+
+PizzaMaker.prototype.specials = function(specTops) {
+  var basePrice = this.crustSize("toShare");
+    if (specTops.length === 0) {
+    return (basePrice);
+  } else if (specTops.length > 0) {
+    return (basePrice + (specTops.length * 2))
+    }
+}
