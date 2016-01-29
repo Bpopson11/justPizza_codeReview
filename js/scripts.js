@@ -16,37 +16,45 @@ PizzaMaker.prototype.crustSize = function(size) {
   }
 }
 
-PizzaMaker.prototype.basics = function(tops) {
-  var basePrice = this.crustSize("drunkParty");
-    if (tops.length <= 3) {
-    return (basePrice);
-    } else if (tops.length >3) {
-    return (basePrice + (tops.length - 3))
+PizzaMaker.prototype.basics = function(basicTops) {
+  var basicAddons = 0
+    if (basicTops <= 3) {
+    return (basicAddons);
+  } else if (basicTops > 3) {
+    return (basicAddons + (basicTops - 3))
     }
 }
 
 PizzaMaker.prototype.specials = function(specTops) {
-  var basePrice = this.crustSize("toShare");
-    if (specTops.length === 0) {
-    return (basePrice);
-  } else if (specTops.length > 0) {
-    return (basePrice + (specTops.length * 2))
+  var specAddons = 0;
+    if (specTops === 0) {
+    return (specAddons);
+  } else if (specTops > 0) {
+    return (specAddons + (specTops * 2))
     }
 }
 
 PizzaMaker.prototype.delivery = function(deliver) {
   if (deliver === "delivery") {
    return (3.5)
-  } else if (deliver === "pick up") {
+ } else if (deliver === "pickUp") {
    return (0)
   }
 }
 
 $(document).ready(function() {
   var pizzaMaker = new PizzaMaker();
-  $("#pizzaForm").click(function(event) {
-  var size = $("select#crust").val();
-  var basePrice = pizzaMaker.crustSize(size);
-  }
+  $("#pizzaForm").submit(function(event) {
+    var size = $("select#crust").val();
+    var basePrice = pizzaMaker.crustSize(size);
+    var basicTops = $('input#basic[type="checkbox"]:checked').length;
+    var specTops = $('input#special[type="checkbox"]:checked').length;
+    var basicTopPrice = pizzaMaker.basics(basicTops);
+    var specTopPrice = pizzaMaker.specials(specTops);
+    var deliver = $("radio#crust").val();
+    var travelFee = pizzaMaker.delivery(deliver);
+    console.log(deliver);
+
+  event.preventDefault();
   });
 });
