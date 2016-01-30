@@ -1,6 +1,8 @@
 # _Just Pizza Ordering site_
 
-#### _This is an HTML and JavaScript/jQuery based webpage that uses a pizza constructor to determine the price of a pizza order. _
+#### _[Link to site](https://github.com/Bpopson11/justPizza_codeReview.git)_
+
+#### _This is an HTML and JavaScript/jQuery based webpage that uses a pizza constructor to determine the price of a pizza order._
 
 #### By _**Brianna Popson**_
 
