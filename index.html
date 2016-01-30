@@ -9,7 +9,8 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <title>Just Pizza!</title>
   </head>
-    <body>
+  <body>
+    <div class="overallPage">
       <div class="jumbotron container-fluid">
         <h1>Just Pizza <small>Seriously, it's all we do.</small></h1>
       </div>
@@ -21,9 +22,10 @@
               <option value="notToShare">The "Not to Share" --- A personal 8" pizza to have all your own</option>
               <option value="toShare">The "To Share" --- Your traditional medium sized pizza.</option>
               <option value="studyGroup">The "Study Group" --- A large 12" pizza, great for meals during group projects</option>
-              <option value="drunkParty">"The Drunk Party" --- Exactly what it sound like: a massive 16" pizza to satisfy the munchiest of crowds</option>
+              <option value="drunkParty">The "Drunk Party" --- Exactly what it sound like: a massive 16" pizza to satisfy the munchiest of crowds</option>
             </select>
           </div>
+        </div>
         <div class="row">
           <div class="col-sm-4">
             <h3>Standard Toppings</h3>
@@ -65,6 +67,24 @@
                 <p>Bell Peppers</p>
               </label>
             </div>
+            <div class="checkbox">
+              <label>
+                <input id="basic" type="checkbox" value=1>
+                <p>Roasted Garlic</p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input id="basic" type="checkbox" value=1>
+                <p>Roma Tomatoes</p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input id="basic" type="checkbox" value=1>
+                <p>Extra Cheese</p>
+              </label>
+            </div>
           </div>
             <!-- Standard CHECKBOXES end here-->
           <div class="col-sm-4">
@@ -101,9 +121,48 @@
                 <p>Fennel Sausage</p>
               </label>
             </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="special">
+                <p>Feta Cheese</p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="special">
+                <p>Artichoke Hearts</p>
+              </label>
+            </div>
           </div>
           <div class="col-sm-4">
+            <h3>Sauce Options?</h3>
+            <h5>Pick any sauce at no addtional charge</h5>
+            <div class="radio">
+              <label>
+              <input type="radio" name="sauce">
+              <p>Housemade marinara</p>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="sauce">
+              <p>EVOO (ask Rachel Ray)</p>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="sauce">
+              <p>Alfredo</p>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="sauce">
+              <p>Pesto</p>
+              </label>
+            </div>
             <h3>Delivery or Pickup?</h3>
+            <h5>Delivery fee applies</h5>
             <div class="radio">
               <label>
               <input type="radio" name="delivery" id="delivery" value="delivery">
@@ -119,12 +178,13 @@
           </div>
         </div><!-- end of first row -->
         <div class="row">
-        <button type="submit" class="btn btn-default btn-block" id="getPrice">Make my Pizza!!!</button>
+          <button type="submit" class="btn btn-default btn-block" id="getPrice">Make my Pizza!!!</button>
         </div>
-        <span id=finalPizzaPrice></span>
+          <span id=finalPizzaPrice></span>
+        </div>
+          <button title="Were you not paying attention? We really only make pizzas. I wasn't joking." type="submit" class="btn btn-default btn-block" id="salad" disabled>Anything to add? Soda? Salad? Breadsticks?</button>
+        </form>
       </div>
-        <button title="Were you not paying attention? We really only make pizzas. I wasn't joking." type="submit" class="btn btn-default btn-block" id="salad" disabled>Anything to add? Soda? Salad? Breadsticks?</button>
-    </form>
     </div>
   </body>
 </html>

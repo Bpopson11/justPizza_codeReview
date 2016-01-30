@@ -4,17 +4,17 @@ body {
 }
 
 .jumbotron {
-  background-image:linear-gradient(#293d29, #1f471f);
-  color: #737373;
+  background-image:linear-gradient(to top right, #204f20, #396239);
+  color: #e6e6e6;
   font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 
 h3, h5 {
-  color: #595959;
+  color: #8c8c8c;
 }
 
 p {
-  color: white;
+  color: #a6a6a6;
 }
 
 #finalPizzaPrice {
