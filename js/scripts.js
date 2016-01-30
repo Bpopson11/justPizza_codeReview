@@ -56,7 +56,10 @@ $(document).ready(function() {
     var travelFee = pizzaMaker.delivery(deliver);
     var finalPrice = basePrice + basicTopPrice + specTopPrice + travelFee;
     $("#finalPizzaPrice").append("<p>Total: $" + finalPrice + ".00" + "</p>");
+    $("#salad").show();
+    event.preventDefault();
+    $("#salad").alert("Were you paying attention? We really only make pizza.");
 
-  event.preventDefault();
   });
+
 });

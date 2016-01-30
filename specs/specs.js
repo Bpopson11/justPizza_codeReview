@@ -21,7 +21,7 @@ describe('PizzaMaker', function(){
 
   it("will charge a delivery fee",  function(){
     var testPizza = new PizzaMaker();
-    expect(testPizza.delivery("delivery")).to.equal(3.5);
+    expect(testPizza.delivery("delivery")).to.equal(3);
   });
 
 });
