@@ -1,6 +1,6 @@
 # _Just Pizza Ordering site_
 
-#### _[Link to site](https://github.com/Bpopson11/justPizza_codeReview.git)_
+#### _[Link to site](http://bpopson11.github.io/justPizza_codeReview/)_
 
 #### _This is an HTML and JavaScript/jQuery based webpage that uses a pizza constructor to determine the price of a pizza order._
 
@@ -8,7 +8,7 @@
 
 ## Description
 
-_A pizza constructor was built of which to establish the basic properties of what would determine a price of pizza. Then methods were called on a pizza object. Based on the kind of toppings the user chooses, the price will adjust appropriately. _
+_A pizza constructor was built of which to establish the basic properties of what would determine a price of pizza. Then methods were called on a pizza object. Based on the kind of toppings the user chooses, the price will adjust appropriately._
 
 ## Setup/Installation Requirements
 
